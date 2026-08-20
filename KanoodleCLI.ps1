@@ -299,7 +299,7 @@ if ($Mode -eq 'Generate') { Invoke-Generate; exit }
 if ($Mode -eq 'Count') { Invoke-Count $(if ($Board) { $Board } else { Read-Board }); exit }
 
 while ($true) {
-    Write-Host "`nKANoodle Solver" -ForegroundColor Cyan
+    Write-Host "`nKanoodleCLI" -ForegroundColor Cyan
     Write-Host '[1] Solve a puzzle  [2] Generate random puzzle  [3] Count solutions  [4] Example  [Q] Quit'
     switch ((Read-Host 'Choose').ToUpperInvariant()) {
         '1' { Invoke-Solve (Read-Board) }

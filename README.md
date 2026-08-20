@@ -1,6 +1,6 @@
-# Kanoodle Solver (PowerShell)
+# KanoodleCLI
 
-A terminal application that models the 5×11 Kanoodle rectangle using the 12 official pieces. It can solve partial boards, generate random full tilings/puzzles, and count solutions.
+KanoodleCLI is a terminal application that models the 5×11 Kanoodle rectangle using the 12 official pieces. It can solve partial boards, generate random full tilings/puzzles, and count solutions.
 
 ## Requirements
 
@@ -24,7 +24,7 @@ Alternatively, download the repository as a ZIP from GitHub, extract it, and ope
 If Windows reports that script execution is disabled, unblock only this downloaded script:
 
 ```powershell
-Unblock-File .\Kanoodle.ps1
+Unblock-File .\KanoodleCLI.ps1
 ```
 
 ## Run
@@ -32,7 +32,7 @@ Unblock-File .\Kanoodle.ps1
 Start the interactive menu:
 
 ```powershell
-.\Kanoodle.ps1
+.\KanoodleCLI.ps1
 ```
 
 The menu provides options to solve a puzzle, generate a random puzzle, count solutions, or display the example board.
@@ -47,18 +47,18 @@ Useful non-interactive commands:
 
 ```powershell
 # Show the supplied example using colored dots
-.\Kanoodle.ps1 -Mode Demo
+.\KanoodleCLI.ps1 -Mode Demo
 
 # Generate a puzzle with four already-placed pieces
-.\Kanoodle.ps1 -Mode Generate -CluePieces 4 -Seed 42
+.\KanoodleCLI.ps1 -Mode Generate -CluePieces 4 -Seed 42
 
 # Solve a board (dots are unknown cells). From an existing PowerShell session:
-& ./Kanoodle.ps1 -Mode Solve -Board @(
+& ./KanoodleCLI.ps1 -Mode Solve -Board @(
   '...........','...........','...........','...........','...........'
 )
 
 # Count every solution for a board; set -Limit for a quick bounded count
-& ./Kanoodle.ps1 -Mode Count -Limit 1000 -Board @(
+& ./KanoodleCLI.ps1 -Mode Count -Limit 1000 -Board @(
   '...........','...........','...........','...........','...........'
 )
 ```
