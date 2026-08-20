@@ -15,8 +15,8 @@ No PowerShell modules or third-party packages are required. Colors are mapped to
 Clone the repository and enter its directory:
 
 ```powershell
-git clone https://github.com/CtrlAltWiz/Kanoodle-Solver.git
-Set-Location .\Kanoodle-Solver
+git clone https://github.com/CtrlAltWiz/KanoodleCLI.git
+Set-Location .\KanoodleCLI
 ```
 
 Alternatively, download the repository as a ZIP from GitHub, extract it, and open PowerShell in the extracted folder.
