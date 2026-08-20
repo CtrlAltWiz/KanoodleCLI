@@ -1,0 +1,9 @@
+# PowerShell/editor temporary files
+*.tmp
+*.log
+*~
+.vscode/
+.idea/
+
+# Local PDF inspection output
+tmp/
